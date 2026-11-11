@@ -50,8 +50,8 @@ body { margin: 0; }
   gap: 16px;
 }
 
-.entete h1 { margin: 0; font-size: 1.8rem; }
-.entete p { margin: 4px 0 0; color: var(--texte-doux); }
+.Entete h1 { margin: 0; font-size: 1.8rem; }
+.Entete p { margin: 4px 0 0; color: var(--texte-doux); }
 
 .pied {
   text-align: center;
