@@ -139,7 +139,7 @@ Créez trois composants dans `src/components/`, chacun dans son propre fichier.
 ```jsx
 function Entete() {
   return (
-    <header className="entete">
+    <header className="Entete">
       <h1>Mes tâches</h1>
       <p>Mon premier projet React</p>
     </header>

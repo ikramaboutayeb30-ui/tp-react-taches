@@ -1,18 +1,20 @@
 
-function ListeTaches() {
+import Tache from './Tache';
+
+function ListeTaches({ taches }) {
     return (
         <ul className="liste-taches">
-            <li className="tache">
-                <span className="titre">Comprendre les composants</span>
-            </li>
-
-            <li className="tache terminee">
-                <span className="titre">Créer les composants React</span>
-            </li>
-
-            <li className="tache">
-                <span className="titre">Apprendre JSX</span>
-            </li>
+            {taches.length === 0 ? (
+                <p className="vide">Aucune tâche à afficher.</p>
+            ) : (
+                taches.map((tache) => (
+                    <Tache
+                        key={tache.id}
+                        titre={tache.titre}
+                        terminee={tache.terminee}
+                    />
+                ))
+            )}
         </ul>
     );
 }

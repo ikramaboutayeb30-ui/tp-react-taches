@@ -1,7 +1,8 @@
-function Entete() {
+function Entete({ titre, sousTitre }) {
     return (
         <header>
-            <h1>Ma liste de tâches</h1>
+            <h1>{titre}</h1>
+            <p>{sousTitre}</p>
         </header>
     );
 }
